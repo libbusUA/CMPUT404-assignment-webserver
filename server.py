@@ -3,6 +3,8 @@ import socketserver
 
 # Copyright 2013 Abram Hindle, Eddie Antonio Santos
 # 
+# Edited and completed by Jacob Libbus
+#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -85,9 +87,6 @@ class MyWebServer(socketserver.BaseRequestHandler):
                 else: 
                     self.request.send(b'HTTP/1.1 404 Not Found\r\n\r\n')
                     self.request.send(b'<!DOCTYPE html>\r\n<html> HTTP 404 Error Not Found </h1></body>\r\n')
-
-            elif self.dataArray[0] == 'HEAD':
-                pass #Do something in when they say HEAD, not sure what yet
             else: 
                 self.send405()
         else: 
