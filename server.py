@@ -1,8 +1,9 @@
 #  coding: utf-8 
 import socketserver
 
-# Copyright 2013 Abram Hindle, Eddie Antonio Santos
+# Copyright 2023 Jacob Libbus
 # 
+# Starter Code created by Abram Hindle, Eddie Antonio Santos
 # Edited and completed by Jacob Libbus
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
